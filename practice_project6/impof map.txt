@@ -1,0 +1,50 @@
+package ImplemenrationOfMaps;
+
+import java.util.*;
+
+public class ImpofMaps {
+
+			public static void main(String[] args) {
+				// map
+				
+				//Hashmap
+				HashMap<Integer,String> hm=new HashMap<Integer,String>();      
+			      hm.put(1,"kiran kumar d natikar");    
+			      hm.put(2,"eshwar");    
+			      hm.put(3,"sai natikar");   
+			       
+			      System.out.println("\nThe elements of Hashmap are ");  
+			      for(Map.Entry <Integer,String> m:hm.entrySet()){ 
+			       System.out.println(m.getKey()+" "+m.getValue());    
+			      }
+			      
+			     //HashTable
+			       
+			      Hashtable<Integer,String> ht=new Hashtable<Integer,String>();  
+			      
+			      ht.put(4,"Akash");  
+			      ht.put(5,"Rupesh");  
+			      ht.put(6,"vijay");  
+			      ht.put(7,"Shreelaxmi");  
+
+			      System.out.println("\nThe elements of HashTable are ");  
+			      for(Map.Entry <Integer,String> n:ht.entrySet()){    
+			       System.out.println(n.getKey()+" "+n.getValue());    
+			      }
+			      
+			      
+			      //TreeMap
+			      
+			      TreeMap<Integer,String> map=new TreeMap<Integer,String>();    
+			      map.put(8,"Akshat");    
+			      map.put(9,"Shivaprasad");    
+			      map.put(10,"Kunal");       
+			      
+			      System.out.println("\nThe elements of TreeMap are ");  
+			      for(Map.Entry <Integer,String> l:map.entrySet()){    
+			       System.out.println(l.getKey()+" "+l.getValue());    
+			      }    
+			      
+			   }  
+		}
+

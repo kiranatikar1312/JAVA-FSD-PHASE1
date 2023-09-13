@@ -1,0 +1,18 @@
+package InrCls;
+
+public class InrClsAssisted1 {
+	private String msg="Welcome to Java platform"; 
+	 
+	 class Inner{  
+	  void hello(){System.out.println(msg+", Let us start learning Inner Classes");}  
+	 }  
+
+
+	public static void main(String[] args) {
+
+		InrClsAssisted1 obj=new InrClsAssisted1();
+		InrClsAssisted1.Inner in=obj.new Inner();  
+		in.hello();  
+	}
+}
+

@@ -1,0 +1,30 @@
+package Contsructors;
+
+public class Student {
+	int id;
+	
+	String name;
+	
+	Student(int i,String n) {
+		id = i;
+		name = n;
+	}
+	
+	void display() {
+		
+		System.out.println(id + " ;" + name);
+		
+	}
+	
+public static void main(String[] args) {
+	
+	Student std = new Student(25,"KIRAN KUMAR D NATIKAR");
+	
+	Student std1 = new Student(30,"ESHWAR");
+	
+	std.display();
+	
+	std1.display();
+}
+}
+

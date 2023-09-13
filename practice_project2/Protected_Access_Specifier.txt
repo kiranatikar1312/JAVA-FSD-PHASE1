@@ -1,0 +1,16 @@
+
+package acessmodifier;
+
+public class Protected_Access_Specifier {
+	void display() 
+	   { 
+	       System.out.println("Using protected access specifier"); 
+	   } 
+		public static void main(String[] args) {
+			//default
+			System.out.println("Protected Access Specifier");
+			Protected_Access_Specifier obj = new Protected_Access_Specifier(); 		  
+	        obj.display();
+
+		}
+	}

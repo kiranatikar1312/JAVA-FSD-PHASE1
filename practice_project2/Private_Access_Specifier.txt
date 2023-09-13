@@ -1,0 +1,17 @@
+package acessmodifier;
+
+public class Private_Access_Specifier {
+	void display() 
+    { 
+        System.out.println("Using private access specifier"); 
+    } 
+
+	public static void main(String[] args) {
+		//private
+		System.out.println("Private Access Specifier");
+		Private_Access_Specifier obj = new Private_Access_Specifier();
+		 obj.display();
+	}
+}
+
+

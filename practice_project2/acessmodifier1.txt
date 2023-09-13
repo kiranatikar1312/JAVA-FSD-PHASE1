@@ -1,0 +1,14 @@
+package acessmodifier;
+	public class acessmodifier {
+		void display() 
+		   { 
+		       System.out.println("Using defalut access specifier"); 
+		   } 
+			public static void main(String[] args) {
+				//default
+				System.out.println("Dafault Access Specifier");
+				acessmodifier obj = new acessmodifier (); 		  
+		        obj.display();
+
+			}
+		}

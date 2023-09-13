@@ -1,0 +1,18 @@
+package methods;
+
+public class CallingMethod {
+	int val=300;
+	int operation(int val) {
+val = val*95/100;
+return(val);
+
+}
+
+	public static void main(String[] args) {
+		CallingMethod s = new CallingMethod();
+		System.out.println("Before operation value of data is "+s.val);
+		s.operation(100);
+		System.out.println("After operation value of data is "+s.val);
+	}
+	}
+

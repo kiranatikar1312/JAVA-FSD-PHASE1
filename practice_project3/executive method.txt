@@ -1,0 +1,14 @@
+package methods;
+
+public class ExecutionMethod {
+	public int multiplynumbers(int s,int t) {
+		int z =s*t;
+		return z;
+	
+	}
+public static void main(String[] args) {
+	ExecutionMethod t = new ExecutionMethod();
+	int ans = t.multiplynumbers(22,38);
+	System.out.println("Multiplication is:" +ans);
+}
+}

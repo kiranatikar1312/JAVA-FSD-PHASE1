@@ -1,0 +1,35 @@
+package assistedpractic;
+
+public class Runnable {
+public static int myCount = 0;
+	    public Runnable(){
+	         
+	    }
+	    public void run() {
+	        while(Runnable.myCount <= 25){
+	            try{
+	                System.out.println("Expl Thread: "+(++Runnable.myCount));
+	                Thread.sleep(100);
+	            } catch (InterruptedException iex) {
+	                System.out.println("Exception in thread: "+iex.getMessage());
+	            }
+	        }
+	    } 
+
+
+		public static void main(String[] args) {
+			
+			System.out.println("Starting...");
+	        Thread t = new Thread();
+	        t.start();
+	        while(Runnable.myCount <= 25){
+	            try{
+	                System.out.println("Main Thread: "+(++Runnable.myCount));
+	                Thread.sleep(100);
+	            } catch (InterruptedException iex){
+	                System.out.println("Exception in main thread: "+iex.getMessage());
+	            }
+	        }
+	        System.out.println("End ...");
+	    }
+	}

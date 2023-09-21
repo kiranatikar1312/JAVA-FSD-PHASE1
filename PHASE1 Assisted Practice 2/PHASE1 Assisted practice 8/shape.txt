@@ -1,0 +1,43 @@
+package project;
+
+//Abstract class
+abstract class Shape {
+ protected String color;
+ 
+ public Shape(String color) {
+     this.color = color;
+ }
+ 
+ public abstract double getArea();
+ 
+ public abstract String toString();
+}
+
+//Concrete class
+class Circle extends Shape {
+ protected double radius;
+ 
+ public Circle(double radius, String color) {
+     super(color);
+     this.radius = radius;
+ }
+ 
+ @Override
+ public double getArea() {
+     return Math.PI * radius * radius;
+ }
+ 
+ @Override
+ public String toString() {
+     return "Circle [radius=" + radius + ", color=" + color + "]";
+ }
+}
+
+//Main class
+public class Shape {
+ public static void main(String[] args) {
+     Circle circle = new Circle(5.0, "Red");
+     System.out.println(circle);
+     System.out.println("Area of circle is " + circle.getArea());
+ }
+}

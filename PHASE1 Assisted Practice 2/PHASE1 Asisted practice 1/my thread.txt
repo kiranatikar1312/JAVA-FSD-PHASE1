@@ -1,0 +1,13 @@
+package assistedpractic;
+
+public class MyThreads {
+public void start()
+ 	{
+  		System.out.println("The  Threaing was started running..");
+}
+ 	public static void main( String args[] )
+ 	{
+  		MyThreads mt = new  MyThreads();
+  		mt.start();
+ 	}
+}

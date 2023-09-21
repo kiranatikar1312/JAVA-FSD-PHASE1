@@ -1,0 +1,24 @@
+package assistedpractic;
+import java.util.Scanner;
+ class Trycatch {
+
+	 Scanner scanner = new Scanner(System.in);
+		
+	    public static void main(String args[]) 
+	    {
+	        int[] array = new int[78];
+	        try 
+	        {
+	            array[10] = 78;
+	        }
+	        catch (ArrayIndexOutOfBoundsException e) 
+	        {
+	            System.out.println("Array index is out of bounds!"); 
+	        }
+	        finally 
+	        {
+	            System.out.println("Display the array sizw " + array.length);
+	        }
+	    }
+	}
+	
